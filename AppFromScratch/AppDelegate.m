@@ -14,8 +14,20 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor greenColor];
     [self.window makeKeyAndVisible];
+    
+    //Initialize applicaster
+    APApplicasterController *applicaster = [APApplicasterController initSharedInstanceWithPListSettingsWithSecretKey:@"a25129723d425516a51fe2910c"];
+    [applicaster setDelegate:self];
+    applicaster.rootViewController = self.viewController;
+    [applicaster load];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(playerStopButtonTapped:)
+                                                 name:APPlayerControllerControlsStopButtonTappedNotification
+                                               object:nil];
+
     return YES;
 }
 

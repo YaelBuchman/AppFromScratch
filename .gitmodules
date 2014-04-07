@@ -1,0 +1,3 @@
+[submodule "applicaster"]
+	path = applicaster
+	url = git@github.com:applicaster/applicaster2-sdk.git

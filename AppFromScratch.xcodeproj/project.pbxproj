@@ -29,6 +29,41 @@
 			remoteGlobalIDString = 3551379818F2B352003C9361;
 			remoteInfo = AppFromScratch;
 		};
+		355137D718F2B5A0003C9361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 355137CB18F2B59F003C9361 /* applicaster.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = applicaster;
+		};
+		355137D918F2B5A0003C9361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 355137CB18F2B59F003C9361 /* applicaster.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2C6118D148D04D4008C52F5;
+			remoteInfo = TestApp;
+		};
+		355137DB18F2B5A0003C9361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 355137CB18F2B59F003C9361 /* applicaster.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 39F6783D181D68460045C977;
+			remoteInfo = "applicaster-lite";
+		};
+		355137DD18F2B5A0003C9361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 355137CB18F2B59F003C9361 /* applicaster.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D4C17331857543300E9959F;
+			remoteInfo = ApplicasterTests;
+		};
+		355137DF18F2B5A0003C9361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 355137CB18F2B59F003C9361 /* applicaster.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DB4789D18BA1E9800A8EEE5;
+			remoteInfo = APCrossmates;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +83,7 @@
 		355137BD18F2B352003C9361 /* AppFromScratchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppFromScratchTests-Info.plist"; sourceTree = "<group>"; };
 		355137BF18F2B352003C9361 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		355137C118F2B352003C9361 /* AppFromScratchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppFromScratchTests.m; sourceTree = "<group>"; };
+		355137CB18F2B59F003C9361 /* applicaster.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = applicaster.xcodeproj; path = applicaster/applicaster.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +143,7 @@
 		355137A218F2B352003C9361 /* AppFromScratch */ = {
 			isa = PBXGroup;
 			children = (
+				355137CB18F2B59F003C9361 /* applicaster.xcodeproj */,
 				355137AB18F2B352003C9361 /* AppDelegate.h */,
 				355137AC18F2B352003C9361 /* AppDelegate.m */,
 				355137AE18F2B352003C9361 /* Images.xcassets */,
@@ -142,6 +179,18 @@
 				355137BE18F2B352003C9361 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		355137CC18F2B59F003C9361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				355137D818F2B5A0003C9361 /* libapplicaster.a */,
+				355137DA18F2B5A0003C9361 /* TestApp.app */,
+				355137DC18F2B5A0003C9361 /* libapplicaster-lite.a */,
+				355137DE18F2B5A0003C9361 /* ApplicasterTests.xctest */,
+				355137E018F2B5A0003C9361 /* APCrossmates.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +255,12 @@
 			mainGroup = 3551379018F2B352003C9361;
 			productRefGroup = 3551379A18F2B352003C9361 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 355137CC18F2B59F003C9361 /* Products */;
+					ProjectRef = 355137CB18F2B59F003C9361 /* applicaster.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3551379818F2B352003C9361 /* AppFromScratch */,
@@ -213,6 +268,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		355137D818F2B5A0003C9361 /* libapplicaster.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libapplicaster.a;
+			remoteRef = 355137D718F2B5A0003C9361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		355137DA18F2B5A0003C9361 /* TestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestApp.app;
+			remoteRef = 355137D918F2B5A0003C9361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		355137DC18F2B5A0003C9361 /* libapplicaster-lite.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libapplicaster-lite.a";
+			remoteRef = 355137DB18F2B5A0003C9361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		355137DE18F2B5A0003C9361 /* ApplicasterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ApplicasterTests.xctest;
+			remoteRef = 355137DD18F2B5A0003C9361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		355137E018F2B5A0003C9361 /* APCrossmates.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APCrossmates.bundle;
+			remoteRef = 355137DF18F2B5A0003C9361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3551379718F2B352003C9361 /* Resources */ = {
@@ -443,6 +536,7 @@
 				355137C718F2B352003C9361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		355137C818F2B352003C9361 /* Build configuration list for PBXNativeTarget "AppFromScratchTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +545,7 @@
 				355137CA18F2B352003C9361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
